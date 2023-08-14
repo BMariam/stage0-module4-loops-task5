@@ -2,6 +2,19 @@ package school.mjc.stage0.loops.task5;
 
 public class Rectangle {
     public void printRectangleFrom8s(int length, int height){
-
+		for (int i = 1; i <= height; ++i) {
+			if (1 == i || height == i) {
+				for (int j = 1; j <= length; ++j) {
+					System.out.print("8");
+				}
+			} else {
+				System.out.print("8");
+				for (int j = 2; j < length; ++j) {
+					System.out.print(" ");
+				}
+				System.out.print("8");
+			}
+			System.out.println();
+		}
     }
 }
